@@ -1,0 +1,28 @@
+[project]
+name = "langchain-playground"
+version = "0.1.0"
+description = "Test, study, and experimentation with LangChain and LangGraph."
+authors = [
+    {name = "miche1696",email = "makalele96@gmail.com"}
+]
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "langchain (>=0.3.26,<0.4.0)",
+    "langgraph (>=0.5.2,<0.6.0)",
+    "openai (>=1.95.1,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "langchain_playground", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+pytest = "^8.4.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
