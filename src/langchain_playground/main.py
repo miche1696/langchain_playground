@@ -36,7 +36,7 @@ if __name__ == "__main__":
     chains_dir = os.path.join(os.path.dirname(__file__), 'chains')
     sys.path.insert(0, chains_dir)
     
-    # Import and execute the .py script inside "chains"
+    # Import and execute the .py script inside "chains" # DA MODIFICARE
     try:
         import multiquery_query_translation
         print("Successfully executed .py")
